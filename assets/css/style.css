@@ -1,1 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    background-color: #efeeb4;
+}
+
+.game-area {
+    background-color: #dad873;
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 150px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 2px;
+
+}
+
+.btn--lightgreen {
+    background-color: #309986;
+    margin-right: 30%;
+    margin-left: 3%;
+}
+
+.btn--magenta {
+    background-color: #993087;
+    margin-right: 3%;
+}
+
+.btn--darkgray {
+    background-color: #454d66;
+}
