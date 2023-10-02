@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // how to determine the winner
     function determineWinner(playerChoice, compChoice) {
         if (playerChoice === compChoice) {
-            document.getElementById('result').innerText = 'tied';
+            document.getElementById('result').innerText = 'tied! :|';
         } else if (
             (playerChoice === 'rock' && compChoice === 'scissors') ||
             (playerChoice === 'paper' && compChoice === 'rock') ||

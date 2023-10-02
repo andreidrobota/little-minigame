@@ -21,7 +21,7 @@ body {
     background-color: #dad873;
     height: 500px;
     width: 50%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .btn {
@@ -32,7 +32,7 @@ body {
     width: 30%;
     height: auto;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 
@@ -66,4 +66,41 @@ body {
 
 .score-area p {
     display: inline;
+}
+
+span {
+    color: #993087;
+}
+
+/* Media querries for different screen sizes */
+
+@media screen and (max-width: 768px) {
+    .game-area {
+        width: 75%;
+    }
+
+    .btn {
+        font-size: 105px;
+    }
+
+    .choices-area {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .game-area {
+        width: 85%;
+    }
+
+    .btn {
+        font-size: 75px;
+    }
+
+    .choices-area {
+        font-size: 15px;
+        margin-top: 50px;
+    }
 }
