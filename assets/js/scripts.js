@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('result').innerText = "lost! :(";
             increaseCompScore();
         }
+        alertWinner();
     }
 
     function displayChoices(playerChoice, compChoice) {
@@ -58,5 +59,25 @@ document.addEventListener("DOMContentLoaded", function () {
         let incrementC = parseInt(document.getElementById('comp-score').innerText);
         ++incrementC;
         document.getElementById('comp-score').innerText = incrementC;
+    }
+
+    // Display an alert when the player or the computer wins, and reset the score for a new round
+    
+    function alertWinner () {
+        playerWin = parseInt(document.getElementById('player-score').innerText);
+        compWin = parseInt(document.getElementById('comp-score').innerText);
+
+        if (playerWin === 10) {
+            alert ('Congratulations! You beat the game!');
+            resetScore();
+        } else if (compWin === 10) {
+            alert ('Aww! Better luck next time!');
+            resetScore();
+        }
+    }
+
+    function resetScore() {
+        document.getElementById('player-score').innerText = '0';
+        document.getElementById('comp-score').innerText = '0';
     }
 });
