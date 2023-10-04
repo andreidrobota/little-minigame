@@ -134,6 +134,7 @@ a:hover i {
 @media screen and (max-width: 480px) {
     .game-area {
         width: 85%;
+        height: 300px;
     }
 
     .btn {
