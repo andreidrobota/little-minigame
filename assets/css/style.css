@@ -144,4 +144,8 @@ a:hover i {
         font-size: 15px;
         margin-top: 50px;
     }
+
+    .score-area p {
+        font-size: 15px;
+    }
 }
